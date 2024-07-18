@@ -24,6 +24,10 @@ Clonez ce dépôt sur votre machine locale en utilisant Git :
 git clone https://github.com/Jadj22/Apprendre_js.git
 cd Apprendre_js
 
+Synchroniser les modifications
+
+git pull origin main
+
 Utilisation
 
 Naviguez dans les différents dossiers pour explorer les exercices et projets. Vous pouvez exécuter les scripts JavaScript en utilisant Node.js. Par exemple :
