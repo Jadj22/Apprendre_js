@@ -14,56 +14,92 @@ body{
 
 .style-marquee{
     font-size: 14px;
-    color: #FF0000;
-    background-color: #FFFFE0;
-    padding: 5px;
-    border: 1px solid #FF0000;
+    color: white;
+    background-color: black;
+    padding: 10px;
     width: 100%;
     box-sizing: border-box;
 }
 
 
 .header-content{
-    margin: 0 20px;
+    /* margin: 0 20px; */
     display: flex;
     justify-content: space-around;
-    /* border: 1px solid #FF0000; */
+    background-color: #c7c7c7;
     align-items: center;
+    height: 20vh;
+    /* border-radius: 10px; */
+    /* background-image: ; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-blend-mode: overlay; */
+    /* background-image: url('https://www.w3schools.com/w3css/img_fjords.jpg'); */
+    /* background-blend-mode: screen; */
+    flex-wrap: wrap;
 }
 
 .logo{
     font-size: 30px;
-    color: #FF0000;
-    /* background-color: #FFFFE0; */
+    color: black;
     padding: 5px;
     box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
-nav ul span {
-    display: none;
-    font-size: 20px;
+nav ul li a span{
+    gap: 40px;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+.material-symbols-outlined {
+    display: flex;
+    font-size: 25px;
     font-weight: 600;
-    color: #FF0000;
-    /* background-color: #FFFFE0; */
-    padding: 5px;
-    box-sizing: border-box;
+    /* padding: 0 15px; */
     align-items: center;
+    border: 1px solid black;
 }
 
 nav ul{
     display: flex;
     gap: 10px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
-    color: #FF0000;
-    /* background-color: #FFFFE0; */
     padding: 5px;
 }
 
 nav ul li a{
     color:  #228B22;
-    /* background-color: #FFFFE0; */
     padding: 5px;
     box-sizing: border-box;
     align-items: center;
 }
+
+nav ul li a:hover{
+    color:  #14ca14;
+}
+
+
+@media screen and (max-width:768px) {
+    .header-content{
+        justify-content: space-between;
+    }
+    nav ul li{
+        /* display: none; */
+    }
+    .material-symbols-outlined {
+        display: flex;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 5px;
+        align-items: center;
+    }
+}
+
+
