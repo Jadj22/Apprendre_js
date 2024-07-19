@@ -1,0 +1,16 @@
+Mini e-shop pour commander des variantes de pizza
+Au menu on a :
+- Pizza margherita.
+- Pizza hawaïenne.
+- Pizza pesto artichaut et burrata.
+- Pizza tomate fromage.
+- Pizza calzone.
+- Pizza bianca.
+- Pizza quatre fromages.
+
+Suggestions de couleurs et leurs codes hexadecimal
+Rouge tomate : #FF6347
+Jaune fromage : #FFD700
+Vert basilic : #228B22
+Brun croûte : #8B4513
+Blanc mozzarella : #FFFFF0

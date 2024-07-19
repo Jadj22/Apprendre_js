@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pizza</h1>
+    <p><span id="test" >0</span> x 300 FCA</p><br>
+    <button id="addition">cliquer</button><br><br>
+    <p>Total : <span id="total">0</span> FCA</p>
+
+    <script>
+        var test = document.getElementById("test");
+        var addition = document.getElementById("addition");
+        var total = document.getElementById("total");
+
+        addition.addEventListener("click", function(){
+            var somme = parseInt(test.textContent);
+            var totalSomme = parseInt(total.textContent);
+
+            somme = somme +1;
+            totalSomme = somme *300;
+
+            test.textContent = somme;
+            total.textContent = totalSomme;
+        });
+
+
+
+    </script>
+</body>
+</html>
