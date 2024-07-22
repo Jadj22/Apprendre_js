@@ -11,7 +11,60 @@
     2. Using .innerHTML and getElementById will
     change the innerHTML of an elment tto be what your variable is -->
 
-    
 
+    <!-- <h1>
+        Je me nomme 
+        <span id="nom">Adjanke</span>
+         etudiant a 
+         <span id="ecole">DEFITECH</span>
+         
+    </h1>
+
+    <script>
+
+        var nom = document.getElementById("nom");
+        var ecole = document.getElementById("ecole");
+
+        var nomChange = nom.innerHTML;
+        var ecoleChnage = ecole.innerHTML;
+
+        var nomChangeTo = "KODJO"
+        var ecoleChangeTo = "Ipnet"
+
+        nom.innerHTML = nomChangeTo;
+        ecole.innerHTML = ecoleChangeTo;
+
+
+    </script> -->
+
+    <h1>
+        Je me nomme 
+        <span id="nom">Amah</span>
+        etudiant a 
+        <span id="ecole">DEFITECH</span>
+        <br>
+        <input type="text" id="nomChangeTo" placeholder="Nom">
+        <input type="text" id="ecoleChangeTo" placeholder="Ecole">
+        <button id="btnChange">Change</button>
+    </h1>
+
+    <script>
+        var nom = document.getElementById("nom");
+        var ecole = document.getElementById("ecole");
+
+        var nomChangeTo = document.getElementById("nomChangeTo");
+        var ecoleChangeTo = document.getElementById("ecoleChangeTo");
+
+        // Remplir les champs de texte avec les valeurs initiales des spans
+        nomChangeTo.value = nom.innerHTML;
+        ecoleChangeTo.value = ecole.innerHTML;
+
+        var btnChange = document.getElementById("btnChange");
+
+        btnChange.addEventListener("click", function() {
+            nom.innerHTML = nomChangeTo.value;
+            ecole.innerHTML = ecoleChangeTo.value;
+        });
+    </script>
 </body>
 </html>
