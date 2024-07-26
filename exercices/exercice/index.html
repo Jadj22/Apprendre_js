@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acception user input</title>
+</head>
+<body>
+    <h1>Ta saisie est : </h1>
+    <h3 id="customInput">______</h3>
+
+    <script>
+        var name = prompt("Comment tu t'appelle ","Joel")
+        var h3Node = document.getElementById("customInput");
+        h3Node.innerText = name.toLowerCase();
+        console.log(name);
+
+      //  var h3Node = document.getElementById("customInput");
+      //  alert(name) = h3Node.innerText;
+      //  
+      //  h3Node.innerText = name.toLowerCase();
+      //  console.log(name);
+
+    </script>
+
+</body>
+</html>

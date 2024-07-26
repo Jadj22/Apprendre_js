@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opposite comparaison</title>
+</head>
+<body>
+    
+    <h1 id="text"></h1>
+
+    <script>
+        var input = prompt("Quel cours voulez-vous ?");
+        var inputLower = input.toLowerCase();
+
+        var text = document.getElementById("text");
+
+        if(inputLower == "javascript pour les debutants"){
+            text.innerHTML = "<strong>Bienvenue</strong> dans le cours de javascript for les <strong>debutants</strong>";
+        }else{
+            text.innerHTML = "Vous avez pris un autre cours"
+        }
+
+    </script>
+
+</body>
+</html>

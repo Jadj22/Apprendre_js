@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test">Bonjour, je m'appelle <span id="name">Rose</span> et j'ai <span id="age">18</span> ans </p>
+
+    <script>
+        var test = document.getElementById("test");
+        var oldTest = test.innerHTML;
+
+        var name = document.getElementById("name");
+        var namTo = name.innerHTML;
+        var nameTo = "Paul";
+
+        var age = document.getElementById("age");
+        var ageTo = age.innerHTML;
+        var ageTo = 19
+
+        test.innerHTML = "Bonjour, je m'appelle "+"<u>"+nameTo+"</u>"+" et j'ai "+"<em>"+ageTo+"</em>"+" ans";
+
+
+    </script>
+
+</body>
+</html>

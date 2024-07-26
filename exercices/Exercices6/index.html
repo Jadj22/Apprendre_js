@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice</title>
+</head>
+<body>
+    <p id="test">Bonjour</p>
+
+    <script>
+        var test = document.getElementById("test");
+        var oldTest = test.innerHTML;
+        test.innerHTML = " <strong>Bonjours</strong>, les amis"
+        var oldTestText = test.innerHTML;
+        test.innerHTML = " <u>Bonjour</u>, les amis "
+        var oldTestTestText = test.innerHTML;
+        test.innerHTML = " <em>Bonjour</em>, les amies "
+    </script>
+</body>
+</html>
