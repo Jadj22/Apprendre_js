@@ -98,7 +98,7 @@ nav ul li a:hover{
 
 .section2{
     img{
-        width: 100%;
+        width: 400px;
         height: 400px;
         display: flex;
         align-items: center;
@@ -156,14 +156,46 @@ nav ul li a:hover{
         color: black;
     }
 
-    .section2{
-        img{
-            width: 100%;
-            height: 400px;
-            display: flex;
-            align-items: center;
-        }
-    }
 }
 
+.section2 img{
+        width: 400px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+    }
 
+.section2-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.section2-content .pizza{
+    margin: 20px;
+    background-color: #c7c7c7;
+    height: 100%;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+.pizza .prix-and-button{
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pizza img{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.pizza button{
+    padding: 20px;
+    border-radius: 99px;
+    border: none;
+}
