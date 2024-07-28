@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+    
+    <!-- <small>Moi meme</small>
+
+    <div class="titre">
+        Je suis la plus grande.
+        <small>Toi, tu es petit</small>
+    </div> -->
+
+    <!-- <ul>
+        <li>nombre 1</li>
+        <li>nombre 2</li>
+        <li>nombre 3</li>
+        <li>nombre 4</li>
+        <li>nombre 5</li>
+        <li>nombre 6</li>
+    </ul> -->
+
+    <input type="text" class="test" value="Je suis bien">
+
+    
+
+    <script>
+        
+        // Selectionner des elements HTML
+
+        var input = document.querySelector(".test");
+        console.log(input.value);
+        input.value = "Je suis bien, mais je suis aussi changé";
+
+        //var lis = document.querySelectorAll("li");
+
+       // for(var i = 0; i < lis.length; i++) {
+        //    lis[i].innerText = "nombre "+ (i+2);
+        //}
+
+        //lis[4].innerText = "facebook"
+
+        /*
+            var titre = document.querySelector(".titre");
+            //titre.innerText = "Tu pense ça"
+            var small = document.querySelector("small");
+            small.innerText = "Oui toi"
+
+            var smallDeTitre = titre.querySelector("small");
+            smallDeTitre.innerText = "Ne me manque pas de respect !"
+        */
+
+    </script>
+
+
+</body>
+</html>

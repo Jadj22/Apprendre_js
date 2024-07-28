@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>projet Calculatrice</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculatrice</h1>
+        <div class="premierInput">
+            <label for="entrer1">Bill Amount (in dollars)</label>
+            <div class="inputUn">
+                <input type="number" class="nbre1" placeholder="ie. 25.99">
+            </div>
+        </div>
+        <div class="deuxiemeInput">
+            <label for="entrer1">Tip Amount(as a %)</label>
+            <div class="inputUn">
+                <input type="number" class="nbre2" placeholder="ie. 9">
+            </div>
+        </div>
+        <div class="btn">
+            <button type="submit" name="calcule" onclick="calculatrice()" >Calculer</button>
+        </div>
+
+
+        
+        
+    </div>
+    <h2>Le calcule fait : <span>N/A</span> CFA</h2>
+
+    <script>
+
+        function calculatrice(){
+            var val1 = document.querySelector(".nbre1");
+            var val2 = document.querySelector(".nbre2")
+
+            var totalValue = (Number(val1.value) * Number(val2.value)) / 100;
+
+            var result = document.querySelector("h2");
+            var resultat = result.querySelector("span");
+
+            resultat.innerHTML = totalValue.toFixed(2);
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

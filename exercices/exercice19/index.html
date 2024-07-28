@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Functions</title>
+</head>
+<body>
+
+    <input type="text" class="js-customName" value="Jean Dupont">
+    <button onclick="alert(getName())">Afficher le nom</button>
+
+   
+    
+    <script>
+        var getName = function() {
+            return document.querySelector(".js-customName").value
+        }
+    </script>
+
+</body>
+</html>

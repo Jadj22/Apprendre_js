@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini projet</title>
+</head>
+<body>
+    <h1>Mini projet</h1>
+    <h4 id="test"></h4>
+
+    <script>
+
+        // 1. Ask the user for a number
+        var inputNumber = prompt("Entrer un nombre");
+
+        var inputNumberNode = Number(inputNumber);
+        var sortie = document.getElementById("test");
+
+        if(inputNumberNode){
+            if(inputNumberNode >= 18){
+                //console.log("Vous êtes majeur, vous pouvez voter")
+                
+                sortie.innerHTML = "Vous êtes majeur, vous pouvez voter"
+            }else{
+                //console.log("Vous etes mineur")
+                sortie.innerHTML = "Vous etes mineur"
+            }
+        }else{
+            //console.log("Pas un nombre")
+            sortie.innerHTML = "Pas un nombre"
+
+        }
+
+        //var para = document.getElementById("test");
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice with function</title>
+</head>
+<body>
+    
+    <!-- <h1 id="test"></h1> -->
+
+    <h3>Tâches</h3>
+
+    <form action="">
+        <label for="tache">Tâche</label>
+        <input type="text" name="tache" id="tache">
+        <button type="submit" name="envoyer">Ajouter</button>
+    </form>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+
+    <script>
+
+        function $(id){
+            return document.getElementById(id)
+        }
+
+        var tacheRecu = $("tache")
+        
+        
+        //var tableDesTaches = Array(tacheRecu.innerHTML)
+
+        function ajouterTache(tacheRecu){
+            return Array(tacheRecu.innerHTML)
+        }
+
+        var test1 = ajouterTache(tacheRecu)
+        console.log(test1)
+
+
+        /*
+        function calcule(a, b){
+            a = Number(a);
+            b = Number(b);
+
+            if(a && b){
+                var calResult = (a * b) / 2
+                return calResult;
+            }else{
+                return "Not a number"
+            }
+
+        }
+
+
+        nbr1 = calcule("3", 4);
+        console.log(nbr1);
+        */
+/*
+        
+            function calculeMulti(a, b) {
+                a = Number(a);
+                b = Number(b);
+        
+                if (!isNaN(a) && !isNaN(b)) {
+                    var resultMulti = a * b;
+                    return resultMulti;
+                } else {
+                    return "Pas un nombre multi";
+                }
+            }
+        
+            function calculeDivi(c, d) {
+                c = Number(c);
+                d = Number(d);
+        
+                if (!isNaN(c) && !isNaN(d)) {
+                    var resultDiv = c / d;
+                    return resultDiv;
+                } else {
+                    return "Pas un nombre div";
+                }
+            }
+        
+            var resultMultiNombre = calculeMulti("Joel", 4);
+            //console.log(resultMultiNombre);
+        
+            var resultDiviNombre = calculeDivi(12, 6);
+            //console.log(resultDiviNombre);
+        
+            if (typeof resultMultiNombre === "number" && typeof resultDiviNombre === "number") {
+                var somme = resultMultiNombre + resultDiviNombre;
+                console.log(somme);
+            } else {
+                console.log("Une des opérations a retourné une erreur");
+            }
+        */
+
+         /*   function calculeSimple(a , b) {
+                a = Number(a);
+                b = Number(b);
+
+                return !isNaN(a) && !isNaN(b) ? a * b : "L'une des valeurs n'est pas un nombre ou chiffre";
+            }
+
+            var resultSimpleCalcule = calculeSimple("dix", 2);
+            console.log(resultSimpleCalcule);
+            */
+
+          /*  function $(id){
+                return document.getElementById(id)
+            }
+
+            var phraseUn = $("test");
+            phraseUn.innerText = "Je change la façon dont on ecrit les getElementById"
+        */
+
+ 
+
+
+    </script>
+
+</body>
+</html>

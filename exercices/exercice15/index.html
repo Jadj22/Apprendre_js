@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <!-- 
+    <script>
+        function greeting(name ="joel", age = 22){
+            console.log("Hello " + name);
+            console.log("age is " + age);
+
+            return name;
+        }
+
+        var defaultName = greeting();
+        var ouk = greeting("Ouk", 21);
+        var tay = greeting("Tay", 20);
+
+    </script> 
+    -->
+
+    <script>
+
+        function salutationPersonnalisee(nom = "Anonyme", age= 0, ville = "Inconnue"){
+            console.log("Bienvenu "+ nom + ", "+ age + ", de "+ ville);
+
+            return {
+                nom: nom,
+                age: age,
+                ville:ville
+            };
+            
+        }
+
+        var defaultInfo = salutationPersonnalisee(defaultInfo);
+        console.log(defaultInfo);
+
+        var info1 = salutationPersonnalisee("Joel", 22, "Lomé");
+        console.log(info1);
+
+        var info2 = salutationPersonnalisee("louis", 19, "Accra");
+        console.log(info2);
+
+        var info3 = salutationPersonnalisee("Alin", 20, "Paris");
+        console.log(info3);
+
+
+
+
+    </script>
+
+
+</body>
+</html>

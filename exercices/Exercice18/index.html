@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    
+    <!-- <h1>Calculatrice</h1> -->
+
+    <form action="">
+        <label for="nbr1">Chiffre1</label>
+        <input type="number" id="nbr1" class="nbr1">
+        <br>
+        <span>+</span>
+        <br>
+        <label for="nbr2">Chiffre2</label>
+        <input type="number" id="nbr2" class="nbr2">
+        <br>
+        <button type="submit" onclick="calculer()">Calculer</button>
+    </form>
+
+    <h1>La somme est : <span>N/A</span></h1>
+
+    <script>
+
+        function calculer(){
+
+            var nbr1 = document.querySelector(".nbr1");
+            var nbr2 = document.querySelector(".nbr2");
+            var somme = Number(nbr1.value) + Number(nbr2.value);
+
+            var result = document.querySelector("h1")
+            var span = result.querySelector("span");
+
+            span.innerHTML = somme
+
+        }
+
+    </script>
+
+</body>
+</html>

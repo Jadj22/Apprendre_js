@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini projet 4</title>
+</head>
+<body>
+    
+    <h1 id="resultat"></h1>
+
+
+    <script>
+
+     
+    
+        function $(id){
+            return document.getElementById(id);
+        }
+
+        var element = $("resultat");
+
+        function tipCalculator(nombre1 = 500, nombre2 = 250){
+            var calulator = nombre1 + nombre2
+            return calulator;
+        }
+
+        var optionDefault = tipCalculator();
+        console.log("Le total fais : ", optionDefault,"$")
+        element.innerHTML = "Le total fais : " + optionDefault +"$";
+
+        var total2 = tipCalculator(2,9);
+        console.log("Le total fais : ", total2,"$")
+        element.innerHTML = "Le total fais : " + total2+"$";
+
+    </script>
+
+</body>
+</html>
