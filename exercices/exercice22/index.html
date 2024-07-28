@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting input values</title>
+</head>
+<body>
+    
+    <button class="btn-js">Cliquer ici</button>
+    <h1 class="resultJs" ></h1>
+
+    <script>
+
+        var increment = 0
+
+        var btn = document.querySelector(".btn-js")
+        
+        btn.addEventListener('click', function(event) {
+            var resultJs = document.querySelector(".resultJs")
+            resultJs.innerHTML = increment++;
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listenner</title>
+</head>
+<body>
+    
+
+    <button class="btn-bot">Cliquer ici</button>
+    <h1 id="resultAfficher"></h1>
+
+    <script>
+        var btn = document.querySelector(".btn-bot");
+
+        var nbrDeClique = 0;
+        btn.addEventListener('click', function(event) {
+            nbrDeClique++;
+            var resultAfficher = document.querySelector("#resultAfficher");
+
+            resultAfficher.innerHTML = nbrDeClique;
+        })
+
+
+
+
+    </script>
+
+</body>
+</html>
