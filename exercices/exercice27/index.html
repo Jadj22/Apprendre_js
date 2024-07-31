@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPP and extending class</title>
+</head>
+<body>
+    
+    <script>
+        class personne {
+    
+            constructor(nom, prenom, age, entrepise, salaire) {
+                this.nom = nom;
+                this.prenom = prenom;
+                this.age = Number(age);
+                this.entrepise = entrepise;
+                this.salaire = Number(salaire * 12);
+            }
+    
+            travail() {
+                console.log(this.nom + " agé de " + this.age + " ans, travaille dans une entreprise " + this.entrepise + " et gagne un salaire de " + this.salaire + " par an");
+            }
+        }
+    
+        class producteur extends personne {
+    
+            constructor(nom, prenom, age, entrepise, salaire, produit, formateur) {
+                super(nom, prenom, age, entrepise, salaire);
+                this.produit = produit;
+                this.formateur = formateur;
+            }
+    
+            faire() {
+                console.log(this.nom + " agé de " + this.age + " ans, travaille en tant que " + this.produit + " dans une entreprise " + this.entrepise + " et gagne un salaire de " + this.salaire + " par an");
+                return this;
+            }
+    
+            activite() {
+                console.log(this.nom + " est aussi un " + this.formateur);
+                return this;
+            }
+        }
+    
+        var noha = new producteur("Didi", "Doduou", 30, "commercial", 3000, "industriel", "formateur");
+        noha.faire().activite();
+    
+    </script>
+    
+
+</body>
+</html>

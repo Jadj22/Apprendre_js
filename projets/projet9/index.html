@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini projet 5</title>
+</head>
+<body>
+    <form action="">
+        <label for="backgroundColor">background color</label>
+        <input type="text" name="backgroundColor" id="bgColor" placeholder="Met une couleur pour le fond">
+        <br>
+        <label for="textColor">Text color</label>
+        <input type="text" name="textColor" id="textColor" placeholder="Met une colour pour le texte">
+        <br>
+        <label for="fontsize">font size</label>
+        <input type="text" name="fontsize" id="fontsize" placeholder="Met une taille pour la police">
+        <br>
+        <label for="fontfamily">font family</label>
+        <input type="text" name="fontfamily" id="fontfamily" placeholder="Met une font famille">
+        
+    </form>
+
+    <script>
+
+        var bgColor = document.querySelector("#bgColor");
+        var textColor = document.querySelector("#textColor");
+        var fontsize = document.querySelector("#fontsize");
+        var fontfamily = document.querySelector("#fontfamily")
+        var body = document.querySelector("body");
+
+
+        bgColor.addEventListener('keyup', function(event){
+            body.style.backgroundColor = event.target.value;
+        })
+
+        textColor.addEventListener('keyup', function(event){
+            body.style.color = event.target.value;
+        })
+
+        fontsize.addEventListener('keyup', function(event){
+            document.body.style.fontSize = event.target.value + 'px';
+        })
+
+        fontfamily.addEventListener('keyup', function(event){
+            document.body.style.fontFamily = "'"+event.target.value+"', sans-serif";
+        })
+
+    </script>
+</body>
+</html>

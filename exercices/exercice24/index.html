@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objets</title>
+</head>
+<body>
+    
+    <script>
+        var personne = {
+            'nom' : "Joel",
+            'prenom' : "Jaj",
+            'age' : 22,
+            'sexe' : "masculin",
+            'manger': function(){
+                console.log(this.nom + " mange pas beaucoup et il est bien maigre et vilain");
+            },
+            'code': function() {
+                console.log(this.nom +" essai de coder tout les jours pour s'ameliorer, je suis fiere de lui ne lache pas et continu comme ca ");
+            },
+            'identifier': function() {
+                console.log(this.nom +" est de sexe "+this.sexe +" et il a "+this.age+" ans");
+            }
+        }
+
+        personne.manger();
+        personne.code();
+        personne.identifier()
+    </script>
+
+</body>
+</html>

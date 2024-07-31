@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devinette</title>
+</head>
+<body>
+    
+    <label for="valeur">Entrer une valeur</label>
+    <input type="number" id="valeur">
+
+    <h3 id="affiche"></h3>
+
+    <script>
+
+        var input = document.querySelector("#valeur");
+
+        var affiche  = document.querySelector("#affiche")
+
+        var nbre_devine = 56;
+
+        input.addEventListener('keyup', function(event){
+            var val = input.value;
+            if(val < nbre_devine){
+                affiche.innerHTML = "La valeur entré est inferieur à la valeur a deviner"
+            }else if(val > nbre_devine){
+                affiche.innerHTML = "La valeur entré est superieur à la valeur a deviner"
+            }
+            while(val == nbre_devine){
+                affiche.innerHTML = "Vous avez deviner la valeur : "+nbre_devine;
+                break
+            }
+        })
+
+    </script>
+
+</body>
+</html>

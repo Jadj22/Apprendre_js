@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Pratique event</title>
+</head>
+<body>
+    
+    <h2 class="colorText" >Mode clair</h2>
+    <span class="material-symbols-outlined">light_mode</span>
+
+    <script>
+
+        var colorText = document.querySelector(".colorText");
+
+        var body = document.querySelector("body");
+
+        var toggle = document.querySelector(".material-symbols-outlined");
+
+        toggle.addEventListener('click', function(event){
+
+            if(toggle.innerHTML == "light_mode"){
+                colorText.innerHTML = "Mode sombre"
+                colorText.style.color = "white"
+                toggle.innerHTML = "dark_mode"
+                body.style.backgroundColor = "black"
+                toggle.style.color = "white"
+
+            }else{
+                colorText.innerHTML = "Mode clair"
+                body.style.backgroundColor = "white"
+                toggle.innerHTML = "light_mode"
+                colorText.style.color = "black"
+                toggle.style.color = "black"
+
+            }
+        })
+        
+        
+    </script>
+
+</body>
+</html>
